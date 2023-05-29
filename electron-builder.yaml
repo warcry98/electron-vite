@@ -1,0 +1,15 @@
+appId: com.warcry98.myapp
+asar: true
+directories:
+  output: release/${version}
+
+files:
+- dist
+- electron
+
+linux:
+  artifactName: "${productName}_${version}.${ext}"
+  target:
+  - target: AppImage
+    arch:
+    - x64
